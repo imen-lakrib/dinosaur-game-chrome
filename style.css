@@ -1,0 +1,64 @@
+.world{
+    width: 600px;
+    height: 200px;
+    border: 1px solid gray;
+    margin: auto;
+    background-image: url(ground.gif);
+    background-size: 600px 300px;
+
+    
+}
+.title{
+    display: flex;
+    justify-content: space-around;
+
+}
+h1{
+    display: flex;
+    align-items: center;
+    font-size: 60px;
+    color: #a5cd3a;
+}
+
+.dino{
+    width: 50px;
+    height: 50px;
+    background-image: url(dino.png);
+    background-size: 50px 50px;
+    position: relative;
+    top: 150px;
+} 
+.dinoJump{
+    animation: jump 0.3s linear;
+}
+@keyframes jump{
+    0% {top :150px;}
+    30% {top :130px;}
+    50% {top :80px;}
+    80% {top :130px;}
+    100% {top :150px;}
+}
+
+
+ .cactu{
+    width: 30px;
+    height: 40px;
+    background-image: url(cactu.png);
+    background-size: 30px 40px;
+    position: relative;
+    left: 570px;
+    top: 110px;
+    
+} 
+.cactuForward{
+    animation: forward 1s infinite linear ;
+}
+
+@keyframes forward{
+    0% {left :570;}
+    100% {left :-20px;}
+}
+
+
+
+
